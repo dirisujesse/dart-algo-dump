@@ -134,7 +134,7 @@ class StringProblems {
       'The inputs ($s1, $s2) are${hasNonZeroValue ? ' not ' : ' '}Anagrams',
     );
 
-    return true;
+    return !hasNonZeroValue;
   }
 
   Iterable<MapEntry<String, int>>? findDuplicates() {
